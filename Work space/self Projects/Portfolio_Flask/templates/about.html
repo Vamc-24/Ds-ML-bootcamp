@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}About Me – My Portfolio{% endblock %}
+
+{% block content %}
+<section class="section about-section" id="about">
+  <h2>About Me</h2>
+  <div class="about-content">
+    <div class="about-text">
+      <p>
+        I am a third-year B.Tech student specializing in Computer Science Engineering with a focus on Artificial Intelligence and Data Science. Passionate about uncovering insights from data, I aspire to build intelligent and data-driven solutions that solve real-world problems.<br>
+
+<br>Over the past few semesters, I have actively explored areas such as Exploratory Data Analysis (EDA), SQL, Excel, and Power BI, and have built several projects to gain hands-on experience. These experiences have helped me understand how to analyze, clean, and visualize data effectively to support data-driven decision-making.<br>
+
+<br>I am proficient in Python, SQL, Microsoft Excel, and key Python libraries like Pandas, NumPy, and Matplotlib. I’m currently on a learning path to explore Machine Learning (ML), Data Structures and Algorithms (DSA), and Natural Language Processing (NLP), and I’m focused on building practical skills by working with real-world datasets and tools.<br>
+<br>
+<b>🔧 Technical Skills:</b> Python, SQL, Excel, Pandas, NumPy, Matplotlib, Power BI<br>
+<b>💡 Learning Goals:</b> Machine Learning, NLP, DSA, Scikit-learn, TensorFlow<br>
+<b>🎯 Career Goal:</b> To become a Data Scientist who applies AI and analytics to solve impactful problems across industries.<br>
+<br>I’m open to internships, collaborative projects, and learning opportunities where I can grow as a data science professional. Let’s connect and grow together in this exciting field!<br>
+      </p>
+    </div>
+    <div class="about-image">
+      <!-- Replace this with your own image under static/profile.jpg -->
+      <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Profile Picture" />
+    </div>
+  </div>
+</section>
+{% endblock %}
